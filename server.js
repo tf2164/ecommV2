@@ -21,7 +21,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 const db =mysql.createConnection({
 
 host: 'ecommv2.c9cmbzningap.us-east-1.rds.amazonaws.com',
-port:  3306,
 user: 'admin',
 password: '12345678',
 database: 'cozy_corner'
