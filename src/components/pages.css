@@ -295,7 +295,7 @@ left: -400%
 
     }
 
-    .ti-facebook{
+    /* .ti-facebook{
       background-image:  url("")
     }
 .ti-instagram{
@@ -303,50 +303,7 @@ left: -400%
     }
     .ti-twitter{
       background-image:  url("")
-    }
- 
-
-    /* images */
-
-/* 
-    .imgbox{
-    background-image:  url("/src/components/visuals/spiritfarer.png");
-    }
-    .imgbox2{
-      background-image:  url("/src/components/visuals/spiritfarer.png");
-      }
-      .imgbox3{
-        background-image:  url("/src/components/visuals/spiritfarer.png");
-        }
-        .imgbox4{
-          background-image:  url("/src/components/visuals/spiritfarer.png");
-          }
-          .imgbox5{
-            background-image:  url("/src/components/visuals/spiritfarer.png");
-            }
-            .imgbox6{
-              background-image:  url("/src/components/visuals/spiritfarer.png");
-              }
-              .imgbox7{
-                background-image:  url("/src/components/visuals/spiritfarer.png");
-                }
-                .imgbox8{
-                  background-image:  url("/src/components/visuals/spiritfarer.png");
-                  }
-                  .imgbox9{
-                    background-image:  url("/src/components/visuals/spiritfarer.png");
-                    }
-                    .imgbox10{
-                      background-image:  url("/src/components/visuals/spiritfarer.png");
-                      }
-                      .imgbox11{
-                        background-image:  url("/src/components/visuals/spiritfarer.png");
-                        }
-                        .imgbox12{
-                          background-image:  url("/src/components/visuals/spiritfarer.png");
-                          } */
-
-
+    } */
 
        body {
       margin: 0;

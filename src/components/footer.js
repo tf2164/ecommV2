@@ -1,6 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import "./cgclogo.png";
+
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -23,7 +24,8 @@ export default function Footer() {
                                 <span className="ti-email"></span>
                                 <span>help@cozygamecorner.com</span>
                             </div>
-                <div className="mobile-social-links">
+                        
+                <div className="mobile-social-links"> 
          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><span className="ti-facebook"></span></a>
          
              <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><span className="ti-instagram"></span></a>
