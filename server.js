@@ -49,13 +49,29 @@ if(err) {
 
 })
 app.get('/shoplow',(req,res)=>{
-    console.log('initial shop');
+
     connection.query('SELECT * FROM products',function(error,results,fields){
         if (error) throw error;
         console.log('request sent');
         res.send(results);
     })
 })
+
+app.post('/contact', (req, res) => {
+    connection.query("INSERT INTO formData (id, name, email, message) VALUES (?,?, ?, ?);", [req.body.name,req.body.email,req.body.message], (err, rows, fields) => {
+        console.log(req.body);
+        if (err) throw err;
+        res.redirect('back');
+    })
+});
+
+app.get("/contact", (req, res) => {
+    connection.query("SELECT * FROM formData", (err, rows, fields) => {
+        if (err) throw err;
+        res.send(rows);
+    })
+});
+
 
 
 app.listen(PORT,() =>{
