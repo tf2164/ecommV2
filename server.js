@@ -2,11 +2,21 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const PORT = process.env.PORT || 3000;
+const path = require('path');
+ const bodyParser = require("body-parser");
+require("dotenv").config();
+
+
 
 app.use(cors());
 app.use(express.json());
 
 const mysql = require('mysql');
+app.use(express.static(path.resolve(__dirname, 'build')));
+app.use(bodyParser.urlencoded({extended:true}));
+
+
 
 const db =mysql.createConnection({
 
@@ -14,7 +24,7 @@ host: 'ecommv2.c9cmbzningap.us-east-1.rds.amazonaws.com',
 port:  3306,
 user: 'admin',
 password: '12345678',
-database: 'ecommv2'
+database: 'cozy_corner'
 
 })
 
@@ -38,3 +48,16 @@ if(err) {
 })
 
 })
+app.get('/shoplow',(req,res)=>{
+    console.log('initial shop');
+    connection.query('SELECT * FROM products',function(error,results,fields){
+        if (error) throw error;
+        console.log('request sent');
+        res.send(results);
+    })
+})
+
+
+app.listen(PORT,() =>{
+    console.log(`Listening to port ${PORT}`);
+});
