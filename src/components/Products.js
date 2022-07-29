@@ -23,8 +23,26 @@ useEffect(()=>{
   console.log(products)
 }, [products]);   
 
+const filterItem = (categoryItem) => {
+  const updatedItems = products.filter((i) => {
+    return i.category === categoryItem;
+  });
+
+  setProducts(updatedItems);
+};
+
 return (
 <div className='productsPage'> 
+  <div className="filter_container">
+    <h2 className="filter_title">Filter:</h2>
+
+    <button className="filter_btn" onClick={() => filterItem("Low to High")}>
+    Low to High
+    </button>
+  </div>
+
+
+
 <div class="product1" id="gamedes"> 
 {products.map((game) => {
 
