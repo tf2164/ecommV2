@@ -4,6 +4,55 @@
 .nav{
   color:#ebf6f5;
 }
+
+.showMenu {
+  width: 100%;
+}
+
+.menuNav.showMenu {
+  width: 100%;
+}
+
+.menuNav.showMenu {
+  width: 100%;
+}
+
+CustomLink {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #3fffd2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.sidebar{
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+.menuNav li:first-child {
+  margin-top: 7rem;
+} 
+
+/* 
+{
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #3fffd2;
+  text-transform: uppercase;
+  font-weight: bold;
+} */
+
+
+
 /* Home page */
 
 
@@ -66,13 +115,11 @@ height: 100%;
 
   /* //contact */
 
-  
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
   :root {
-    --light: #d0d1d3;
-    --dark: #040d14;
-    --pink: #d7147c;
+   ( var --light: #d0d1d3);
+    (var --dark: #040d14);
+    (var --pink: #d7147c);
   }
   
   /* body {
@@ -231,11 +278,9 @@ align-self: center;
    color: black;
    background-color: #ebf6f5;
   
-    
-   
  }
  
-///////////////////
+
 .expandMoreContent{
   overflow:hidden;
   transition: height 0.5s ease-in-out;
@@ -261,7 +306,7 @@ transition:height 0.5s ease-in-out;
 }
 
 
-//////////////////////////
+
 
  img{
  
