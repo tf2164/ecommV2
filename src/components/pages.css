@@ -199,7 +199,7 @@ height: 100%;
     background-color: #040d14;
     color: #d7147c !important;
     padding: 15px 50px;
-    border: 2px solid #d7147c;
+    border: 2px solid #040d14;
     border-radius: 10px;
     margin-bottom: 25px;
   }
@@ -542,11 +542,11 @@ button{
  color: #fbe3e8
 }
 
+/* ----------------------Media Queries (470px)--------------------- */
+/* ------------------------------------------------------------ */
 /*----------------------Media Queries (470px)---------------------*/
 /*------------------------------------------------------------*/
-/*----------------------Media Queries (470px)---------------------*/
-/*------------------------------------------------------------*/
-/* @media only screen and (max-width: 470px) {
+ @media only screen and (max-width: 470px) {
   .hero-content {
     padding: 1.5rem;
   }
@@ -592,7 +592,7 @@ button{
 /*------------------------------------------------------------*/
 /*----------------------Media Queries (768px)---------------------*/
 /*------------------------------------------------------------*/
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .wrapper.full-screen {
     padding: 0rem;
   }
@@ -630,7 +630,7 @@ button{
 /*------------------------------------------------------------*/
 /*----------------------Media Queries (960px)---------------------*/
 /*------------------------------------------------------------*/
-/* @media only screen and (min-width: 960px) {
+ @media only screen and (min-width: 960px) {
   .hero {
     grid-template-columns: repeat(2, 1fr);
     height: 60vh;
@@ -720,7 +720,7 @@ button{
 } */
 /*----------------------Media Queries (1700px)------------------------------------------------------------*/
 /*----------------------Media Queries (1700px)------------------------------------------------------------*/
-/* @media only screen and (min-width: 1700px) {
+ @media only screen and (min-width: 1700px) {
   .wrapper {
     width: 80%;
     margin: auto;
@@ -738,4 +738,4 @@ button{
   .footer-logo img {
     width: 200px;
   }
-} */
+}
