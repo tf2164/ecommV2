@@ -310,11 +310,14 @@ transition:height 0.5s ease-in-out;
  /* sliderr */
  .slider{
   overflow: hidden;
+  height: 29rem;
+  
 }
 
 .slider figure{
   position: absolute;
   width: 500%;
+
 
   margin: 0;
   left: 0;

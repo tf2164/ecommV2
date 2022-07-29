@@ -22,7 +22,7 @@ export default function Home(){
                     </section>
                    
                 </div>
-                <a href="javascript:void(0)" alt="sideClose" class="closeSide" onclick="closeNav()">&times;</a>
+                
                 <div className='slider'>
 <figure>
 

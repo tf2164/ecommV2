@@ -50,8 +50,8 @@ return(
     <div className="productBox">
       <img className="image-pro" src={game.Image} alt={game.name}/>
         <h3>{game.Title}</h3>
+        <div className='expandMoreHolder'>
         <p class="expandMoreContent" id="showMoreContent1">{game.Description}</p>
-       <div className='expandMoreHolder'>
        <span expand-more data-hidetext="show less.." data-showtext="show more.." data-target="showMoreContent1" class="btn-expand-more">Show more</span>
        
         </div>
