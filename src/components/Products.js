@@ -23,29 +23,25 @@ useEffect(()=>{
   console.log(products)
 }, [products]);   
 
+return (
 <div className='productsPage'> 
 <div class="product1" id="gamedes"> 
 {products.map((game) => {
+
 return(
-
-
-
     <div className="productBox">
       <img src={game.Image} alt={game.name}/>
         <h3>{game.Title}</h3>
         <p>{game.Description}</p>
         <p>USD ${game.Price}</p>
         <button className='cartBtn'>Add to Cart</button>
-    </div>
-
-
-);
-})}
-</div>
+    </div>)}
+)};
 
 </div>
 
+</div>
 
-}
+ )}
 
 export default Product;
