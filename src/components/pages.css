@@ -581,10 +581,6 @@ button{
     margin-top: 0rem;
   }
 
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 1rem;
-  }
 
   .product {
     margin-bottom: 1rem;
@@ -598,7 +594,6 @@ button{
 /*------------------------------------------------------------*/
  @media only screen and (min-width: 960px) {
   .hero {
-    grid-template-columns: repeat(2, 1fr);
     height: 45rem;
     overflow: hidden;
   }
@@ -645,7 +640,7 @@ button{
   .footer-logo img {
     width: 150px;
   }
-} */
+} 
 /*----------------------Media Queries (1700px)------------------------------------------------------------*/
 /*----------------------Media Queries (1700px)------------------------------------------------------------*/
  @media only screen and (min-width: 1700px) {
