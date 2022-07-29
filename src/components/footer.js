@@ -1,7 +1,7 @@
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
 import "./cgclogo.png";
-
+import './pages.css'
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/icon?family=Material+Icons"

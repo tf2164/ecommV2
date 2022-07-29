@@ -1,6 +1,5 @@
 import React, {Component} from "react";
-import Navbar from "./Navbar";
-import About from "./components/About";
+import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Products from "./components/Products";
@@ -15,7 +14,6 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Products" element={<Products />} />
-      <Route path="/About" element={<About />} />
       <Route path="/Contact" element={<Contact />} />
     </Routes>
   </div>

@@ -30,9 +30,14 @@ return (
 
 return(
     <div className="productBox">
-      <img src={game.Image} alt={game.name}/>
+      <img className="image-pro" src={game.Image} alt={game.name}/>
         <h3>{game.Title}</h3>
-        <p>{game.Description}</p>
+        <p class="expandMoreContent" id="showMoreContent1">{game.Description}</p>
+       <div className='expandMoreHolder'>
+       <span expand-more data-hidetext="show less.." data-showtext="show more.." data-target="showMoreContent1" class="btn-expand-more">Show more</span>
+       
+        </div>
+       
         <p>USD ${game.Price}</p>
         <button className='cartBtn'>Add to Cart</button>
     </div>)}
@@ -43,5 +48,25 @@ return(
 </div>
 
  )}
+document.addEventListener('DOMContentLoaded', ()=> {
+
+const expandsMore = document.querySelectorAll('[expand-more')
+function expand(){
+  const showContent = document.getElementById(this.dataset.target)
+  if(showContent.classList.contains('expand-active')){
+this.innerHTML=this.dataset.showtext
+  }
+  else{
+    this.innerHTML=this.dataset.hidetext
+  }
+showContent.classList.toggle('expand-active')
+}
+expandsMore.forEach(expandMore =>{
+  expandMore.addEventListener('click',expand)
+})
+
+})
+
+
 
 export default Product;
