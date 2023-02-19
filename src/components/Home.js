@@ -1,6 +1,6 @@
 import './pages.css'
 import React from "react";
-
+import './Functional.js'
 
 
 export default function Home(){
@@ -15,7 +15,7 @@ export default function Home(){
                             <h3 className="text-main">C <span >G</span> <br/>C</h3>
                             <p>Gaming doesn't have to be stressful</p>
                             <div className="hero-action-btn">
-                                <a href="/products" className="btn-main">Shop</a>
+                                <a href="/frontendProducts" className="btn-main">Shop</a>
                             </div>
                         </div>
                         
@@ -24,7 +24,7 @@ export default function Home(){
                 </div>
                 
                 <div className='slider'>
-<figure>
+                <div className='slider-wrapper'>
 
 
 <img src="https://main.d3uakyc020lweb.amplifyapp.com/gameCovers/rajii.png" class="img-responsive" alt=""/>
@@ -33,13 +33,17 @@ export default function Home(){
 <img src="https://main.d3uakyc020lweb.amplifyapp.com/gameCovers/cozy-grove.jpg" class="img-responsive" alt=""/>
 
 
+</div>
 
-
-
-</figure>
-
+<div className='sideInformational'>
+Have a Cozy Fall with our new games
 
 </div>
+</div>
+
+
+
+
                 </>
     )
     }

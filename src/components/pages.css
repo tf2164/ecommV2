@@ -1,6 +1,7 @@
 
 .nav{
   color:#ebf6f5;
+  width: 100%;
 }
 
 CustomLink {
@@ -307,58 +308,129 @@ transition:height 0.5s ease-in-out;
  
    
  }
- /* sliderr */
- .slider{
-  overflow: hidden;
-  height: 29rem;
-  
-}
 
-.slider figure{
-  position: absolute;
-  width: 500%;
+ 
 
 
-  margin: 0;
-  left: 0;
-  animation: 40s slider infinite;
-}
-
-.slider figure img{
-  width: 10%;
+ .slider {
+  width: 100%;
   height: 20rem;
-  float: left;
+  overflow: hidden;
+  position: relative;
+  left: 0;
 }
 
-@keyframes slider {
-  0% {
-      left: 0;
-  }
- 20% {
-left: 0;
-  }
- 25% {
-left: -100%
-  }
- 45% {
-left: -100%
-  }
- 50% {
-left:-200%
-  }
- 70% {
-left: -200%
-  }
-  75%{
-left: -300%
-  }
-95%  {
-      left:-300%
-  }
- 100% {
-left: -500%
-  }
+.slider-wrapper {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  transition: 40s slider infinite;
 }
+
+.slider-wrapper img {
+  width: 25%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sideInformational{
+text-align: right;
+
+
+}
+/* #gamedes{
+
+height: 30rem;
+width: 35rem;
+background-color: #d7147c;
+margin-right: 100px;
+
+} */
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+  display: flex;  
+  flex-wrap: wrap;
+}
+
+.cell{
+  height: 30rem;
+  width: 35rem;
+  background-color: #d7147c;
+padding-top: 2rem;
+padding-right: 2rem;
+padding-left: 2rem;
+border-radius: 25px;
+
+}
+
+.gameimg{
+  height: 20rem;
+  width: 35rem;
+border-radius: 10px;
+}
+
+.product{
+display:flex;
+text-align:center;
+flex-wrap: wrap;
+}
+.price{
+  background-color: beige;
+  width: 3rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  text-align:center;
+  border-radius: 10px;
+  padding-right: 2rem;
+padding-left: 2rem;
+display: inline-block;
+}
+
+cartProduct{
+  display: inline-block;
+  justify-content: space-between;
+  background-color: blue;
+  width:10r0% ;
+  position: relative;
+
+}
+
+.add-to-cart-button {
+  display: inline-block;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #3e8e41;
+}
+
+.carticon{
+  height: 2rem;
+}
+
+
+/* .rows{
+background-color:purple;
+space-between: 100px;
+display: grid;
+align-items: center;
+
+} */
 
   /* ///footer */
 
@@ -369,7 +441,7 @@ left: -500%
     text-align: center;
     height: 10rem;
     width: 100%;
-    position: fixed;
+    position: relative;
   
     }
 

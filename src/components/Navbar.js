@@ -2,6 +2,7 @@ import Hamburger from 'hamburger-react';
 import './pages.css'
 import React, {useState} from 'react';
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import shopping from './visuals/shopping.png';
 
 
 
@@ -16,8 +17,9 @@ export default function Navbar() {
         Cozy Game Corner
       </Link>
       <ul>
-        <CustomLink to="/Products">Products</CustomLink>
+        <CustomLink to="/Store">Products</CustomLink>
         <CustomLink to="/Contact">Contact</CustomLink>
+        <CustomLink to="/Cart"><img className='carticon' src={shopping}/></CustomLink>
       </ul>
 
       {/* <Hamburger  direction="right" duration={0.8} toggled={isOpen} toggle={setOpen}>
